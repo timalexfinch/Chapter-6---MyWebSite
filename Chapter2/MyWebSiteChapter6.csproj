@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93BF12E6-B9D3-46E8-9446-A4528E07C182}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Chapter2</RootNamespace>
+    <AssemblyName>Chapter2</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="campingKit.html" />
+    <Content Include="Content\backgrounds\blue_gradient.png" />
+    <Content Include="Content\backgrounds\bubbles.png" />
+    <Content Include="Content\backgrounds\coloured-bricks.png" />
+    <Content Include="Content\backgrounds\dark-sky.png" />
+    <Content Include="Content\backgrounds\garden.png" />
+    <Content Include="Content\backgrounds\greystone.png" />
+    <Content Include="Content\backgrounds\handprints.png" />
+    <Content Include="Content\backgrounds\leaves.png" />
+    <Content Include="Content\backgrounds\maple-leaves.png" />
+    <Content Include="Content\backgrounds\marble-blue.png" />
+    <Content Include="Content\backgrounds\marble-grey.png" />
+    <Content Include="Content\backgrounds\marble-orange.png" />
+    <Content Include="Content\backgrounds\marble-yellow.png" />
+    <Content Include="Content\backgrounds\monet.png" />
+    <Content Include="Content\backgrounds\oranges.png" />
+    <Content Include="Content\backgrounds\paper.png" />
+    <Content Include="Content\backgrounds\psychedelic.png" />
+    <Content Include="Content\backgrounds\shades-of-blue.png" />
+    <Content Include="Content\backgrounds\slate.png" />
+    <Content Include="Content\backgrounds\soft-blue.png" />
+    <Content Include="Content\backgrounds\specks.png" />
+    <Content Include="Content\backgrounds\stars.png" />
+    <Content Include="Content\backgrounds\stripes-blue.png" />
+    <Content Include="Content\backgrounds\stripes-green.png" />
+    <Content Include="Content\backgrounds\stripes-purple.png" />
+    <Content Include="Content\backgrounds\tile-blue.png" />
+    <Content Include="Content\backgrounds\tile-purple.png" />
+    <Content Include="Content\backgrounds\water-blue.png" />
+    <Content Include="Content\backgrounds\water-green.png" />
+    <Content Include="Content\backgrounds\wood-brown.png" />
+    <Content Include="Content\backgrounds\wood-green.png" />
+    <Content Include="Content\backgrounds\wood-pine.png" />
+    <Content Include="Content\banners\mountains.jpg" />
+    <Content Include="Content\banners\cajun.png" />
+    <Content Include="Content\banners\fab-food.png" />
+    <Content Include="Content\banners\formaggi.png" />
+    <Content Include="Content\banners\futuristic.png" />
+    <Content Include="Content\banners\musicbox.png" />
+    <Content Include="Content\banners\new_world.png" />
+    <Content Include="Content\banners\open.png" />
+    <Content Include="Content\banners\subsilver.png" />
+    <Content Include="Content\banners\sunset.jpg" />
+    <Content Include="Content\gifs\arrow-1.gif" />
+    <Content Include="Content\gifs\arrow-2.gif" />
+    <Content Include="Content\gifs\butterfly.gif" />
+    <Content Include="Content\gifs\chain.gif" />
+    <Content Include="Content\gifs\cine.gif" />
+    <Content Include="Content\gifs\cool-banner.gif" />
+    <Content Include="Content\gifs\dog.gif" />
+    <Content Include="Content\gifs\dot-coloured.gif" />
+    <Content Include="Content\gifs\download.gif" />
+    <Content Include="Content\gifs\eggtimer.gif" />
+    <Content Include="Content\gifs\email-2.gif" />
+    <Content Include="Content\gifs\email-3.gif" />
+    <Content Include="Content\gifs\email-4.gif" />
+    <Content Include="Content\gifs\eyeballs.gif" />
+    <Content Include="Content\gifs\felix.gif" />
+    <Content Include="Content\gifs\flashing-lamp.gif" />
+    <Content Include="Content\gifs\football.gif" />
+    <Content Include="Content\gifs\funstuff.gif" />
+    <Content Include="Content\gifs\glasses.gif" />
+    <Content Include="Content\gifs\globe.gif" />
+    <Content Include="Content\gifs\hammer.gif" />
+    <Content Include="Content\gifs\happysun.gif" />
+    <Content Include="Content\gifs\juggler.gif" />
+    <Content Include="Content\gifs\line-1.gif" />
+    <Content Include="Content\gifs\line-colour.gif" />
+    <Content Include="Content\gifs\line-pulse-blue.gif" />
+    <Content Include="Content\gifs\line-pulse-green.gif" />
+    <Content Include="Content\gifs\line-thermometer.gif" />
+    <Content Include="Content\gifs\new.gif" />
+    <Content Include="Content\gifs\ok-tick.gif" />
+    <Content Include="Content\gifs\openfor.gif" />
+    <Content Include="Content\gifs\plane.gif" />
+    <Content Include="Content\gifs\quicktime.gif" />
+    <Content Include="Content\gifs\recycle.gif" />
+    <Content Include="Content\gifs\saucer.gif" />
+    <Content Include="Content\gifs\seagull.gif" />
+    <Content Include="Content\gifs\skull.gif" />
+    <Content Include="Content\gifs\spiderweb.gif" />
+    <Content Include="Content\gifs\star.gif" />
+    <Content Include="Content\gifs\sunburn.gif" />
+    <Content Include="Content\gifs\sunmoves.gif" />
+    <Content Include="Content\gifs\temperature.gif" />
+    <Content Include="Content\gifs\train.gif" />
+    <Content Include="Content\gifs\updated.gif" />
+    <Content Include="Content\gifs\wallace.gif" />
+    <Content Include="Content\gifs\welcome.gif" />
+    <Content Include="Content\gifs\write.gif" />
+    <Content Include="Content\images\canada.png" />
+    <Content Include="Content\images\scotland.png" />
+    <Content Include="Content\images\stonehenge.png" />
+    <Content Include="Content\music\Broken_Arrows.mp3" />
+    <Content Include="Content\music\Frankenstein.wma" />
+    <Content Include="Content\music\Hail_Bop.mp3" />
+    <Content Include="Content\music\holy roller novocaine.mp3" />
+    <Content Include="Content\music\Sex_On_Fire.mp3" />
+    <Content Include="Content\music\So_What.mp3" />
+    <Content Include="Content\music\Three_Women.flac" />
+    <Content Include="Content\videos\dr.who.mp4" />
+    <Content Include="Content\videos\falls.mp4" />
+    <Content Include="Content\videos\waterDrop.mp4" />
+    <Content Include="index.html" />
+    <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\LocalIIS.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="blog.html" />
+    <Content Include="Styles\StyleSheet1.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51542</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:51543/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
